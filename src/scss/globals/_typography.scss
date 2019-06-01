@@ -1,0 +1,32 @@
+// typography
+
+// check variables.scss
+// $default-font-size: 16px;
+// $default-font-family: "Helvetica", sans-serif;
+// $default-color: $color-cod-gray;
+
+body {
+  font-family: $default-font-family;
+  font-size: $default-font-size;
+  color: $default-color;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+h1 {
+  color: purple;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+}

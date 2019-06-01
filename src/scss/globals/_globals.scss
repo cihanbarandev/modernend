@@ -1,0 +1,55 @@
+// globals
+@import 'normalize';
+@import 'variables';
+@import 'typography';
+
+body {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.main-wrapper {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  opacity: 0.2;
+  font-family: museo-sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+}
+
+::-moz-selection {
+  background-color: #f04e23;
+  color: #fff;
+}
+
+::selection {
+  background-color: #f04e23;
+  color: #fff;
+}
+
+.row {
+  &.rtl {
+    > div {
+      float: right;
+
+      // @include xs {
+      //   float: left;
+      // }
+    }
+  }
+}
